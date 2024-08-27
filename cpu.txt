@@ -1,0 +1,11 @@
+你的系统上有两个CPU（0和1）都处于在线状态。如果你想禁用其中一个，比如CPU 1，可以使用：
+
+```bash
+echo 0 > /sys/devices/system/cpu/cpu1/online
+```
+
+要重新启用它，使用：
+
+```bash
+echo 1 > /sys/devices/system/cpu/cpu1/online
+```
